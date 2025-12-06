@@ -1,0 +1,163 @@
+/* IMPORT FONT */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+
+/* GLOBAL */
+body {
+    margin: 0;
+    padding: 0;
+    background: #0F0F0F;
+    font-family: 'Poppins', sans-serif;
+    color: white;
+}
+
+/* CENTER CONTAINERS */
+.center-box {
+    width: 420px;
+    margin: 100px auto;
+    background: rgba(255, 255, 255, 0.05);
+    padding: 40px;
+    border-radius: 25px;
+    backdrop-filter: blur(10px);
+    border: 1px solid rgba(255,255,255,0.08);
+    box-shadow: 0px 0px 30px rgba(127, 72, 255, 0.2);
+}
+
+/* HEADINGS */
+h2, h3 {
+    text-align: center;
+    font-weight: 600;
+    letter-spacing: 0.5px;
+}
+
+/* INPUTS */
+input, textarea, select {
+    width: 100%;
+    padding: 14px;
+    margin: 10px 0 20px 0;
+    border-radius: 12px;
+    border: none;
+    background: rgba(255,255,255,0.08);
+    color: white;
+    font-size: 15px;
+}
+
+textarea {
+    height: 100px;
+}
+
+/* PLACEHOLDER */
+input::placeholder,
+textarea::placeholder {
+    color: #bbbbbb;
+}
+
+/* BUTTONS */
+button {
+    width: 100%;
+    padding: 15px;
+    border-radius: 12px;
+    border: none;
+    font-size: 16px;
+    font-weight: 500;
+    background: linear-gradient(135deg, #7A5AF5, #FF4FD8);
+    color: white;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+button:hover {
+    box-shadow: 0px 0px 20px rgba(255, 79, 216, 0.5);
+    transform: translateY(-2px);
+}
+
+/* LINKS */
+a {
+    color: #C7AFFF;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+/* DASHBOARD BUTTONS */
+.menu-btn {
+    display: inline-block;
+    margin: 20px 10px;
+    padding: 15px 30px;
+    background: linear-gradient(135deg, #7A5AF5, #FF4FD8);
+    border-radius: 18px;
+    transition: 0.3s;
+}
+
+.menu-btn:hover {
+    box-shadow: 0px 0px 20px rgba(255, 79, 216, 0.5);
+}
+
+/* TABLE */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 30px;
+}
+
+th, td {
+    padding: 15px;
+    border-bottom: 1px solid rgba(255,255,255,0.1);
+    vertical-align: middle;  /* Add this line */
+}
+
+th {
+    text-align: left;
+    color: #C7AFFF;
+}
+
+/* ACTION BUTTONS - Fixed to stay on one line */
+/* ACTION BUTTONS - aligned properly */
+td.actions {
+    display: table-cell !important;
+    vertical-align: middle !important;
+    white-space: nowrap;
+}
+
+.action-btn {
+    display: inline-block;
+    padding: 8px 14px;
+    border-radius: 10px;
+    font-size: 14px;
+    color: white;
+    text-decoration: none;
+    margin-right: 8px;
+    transition: 0.3s;
+    white-space: nowrap;
+}
+
+.view {
+    background: linear-gradient(135deg, #7A5AF5, #9B6BFF);
+}
+
+.view:hover {
+    background: linear-gradient(135deg, #9B6BFF, #B88BFF);
+    box-shadow: 0 0 12px rgba(150, 125, 255, 0.6);
+    transform: translateY(-2px);
+}
+
+.edit {
+    background: #7A5AF5;
+}
+
+.edit:hover {
+    background: #9B6BFF;
+    box-shadow: 0 0 12px rgba(122, 90, 245, 0.5);
+    transform: translateY(-2px);
+}
+
+.delete {
+    background: #D346A3;
+}
+
+.delete:hover {
+    background: #E557B5;
+    box-shadow: 0 0 12px rgba(211, 70, 163, 0.5);
+    transform: translateY(-2px);
+}
